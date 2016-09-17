@@ -1,8 +1,8 @@
 from flask_script import Manager
 from flask_migrate import Migrate, MigrateCommand
 
-from main_api.app import create_app
-from main_api.extensions import db
+from {{cookiecutter.app_name}}.app import create_app
+from {{cookiecutter.app_name}}.extensions import db
 
 app = create_app()
 

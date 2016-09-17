@@ -28,7 +28,7 @@ LOGGING_CONFIG = {
         }
     },
     'loggers': {
-        'main_api': {
+        '{{cookiecutter.app_name}}': {
             'handlers': ['default'],
             'level': 'INFO',
             'propagate': False,

@@ -1,6 +1,6 @@
 import os
 
-from main_api import create_app
+from {{cookiecutter.app_name}} import create_app
 
 try:
     string_blueprints = os.environ.get('API_BLUEPRINTS')

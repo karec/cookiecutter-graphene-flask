@@ -3,8 +3,8 @@ import logging.config
 
 from flask import Flask
 
-from main_api import blueprints
-from main_api.extensions import db
+from {{cookiecutter.app_name}} import blueprints
+from {{cookiecutter.app_name}}.extensions import db
 
 DEFAULT_BLUEPRINTS = (
     blueprints.graphql_bp,
@@ -20,8 +20,8 @@ def create_app(blueprints=None, testing=False):
         blueprints = DEFAULT_BLUEPRINTS
 
     app = Flask(
-        'main_api',
-        instance_path='/tmp',
+        '{{cookiecutter.app_name}}',
+        instance_path='{{app_instance_path}}',
         instance_relative_config=True
     )
 
@@ -35,10 +35,10 @@ def create_app(blueprints=None, testing=False):
 
 def configure_app(app, testing):
     """Initialize configuration"""
-    app.config.from_object('main_api.config')
+    app.config.from_object('{{cookiecutter.app_name}}.config')
 
     if testing is True:
-        app.config.from_object('main_api.test_config')
+        app.config.from_object('{{cookiecutter.app_name}}.test_config')
     else:
         app.config.from_pyfile('config.cfg', silent=True)
 

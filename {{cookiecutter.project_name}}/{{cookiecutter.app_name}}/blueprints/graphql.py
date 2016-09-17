@@ -1,7 +1,7 @@
 from flask import Blueprint
 from flask_graphql import GraphQLView
 
-from main_api.graphql.schema import schema
+from {{cookiecutter.app_name}}.graphql.schema import schema
 
 
 graphql_bp = Blueprint('graphql', __name__)

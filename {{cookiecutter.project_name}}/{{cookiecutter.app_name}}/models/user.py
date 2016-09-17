@@ -1,4 +1,4 @@
-from main_api.extensions import db
+from {{cookiecutter.app_name}}.extensions import db
 
 
 class User(db.Model):

@@ -4,8 +4,8 @@ import graphene
 from graphene import relay
 from graphene_sqlalchemy import (SQLAlchemyConnectionField,
                                  SQLAlchemyObjectType)
-from main_api.models import User as UserModel
-from main_api.models import Article as ArticleModel
+from {{cookiecutter.app_name}}.models import User as UserModel
+from {{cookiecutter.app_name}}.models import Article as ArticleModel
 
 logger = logging.getLogger(__name__)
 
