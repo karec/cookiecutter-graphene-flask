@@ -23,7 +23,7 @@ $ python manage.py run
 
 At this point a Flask debug server should be running on port 5000 and a `graphql.db` file should has been created on your project folder with basic fixtures.
 
-Graphql endpoint is by default configured on `/` endpoint
+Graphql endpoint is by default configured on `/`
 
 ## Feaures
 
