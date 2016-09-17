@@ -2,5 +2,6 @@ flask
 flask-script
 flask-migrate
 flask-sqlalchemy
-graphene==1.0.dev0
-graphene-sqlalchemy==1.0.dev20160910000001
+graphene
+graphene-sqlalchemy
+flask-graphql
