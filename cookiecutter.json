@@ -1,5 +1,5 @@
 {
-  "project_name": "restful_api",
-  "app_name": "myapi",
+  "project_name": "graphene_project",
+  "app_name": "graphql_app",
   "app_instance_path": "/tmp"
 }

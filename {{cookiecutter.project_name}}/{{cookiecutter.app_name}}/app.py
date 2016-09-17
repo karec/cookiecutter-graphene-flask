@@ -21,7 +21,7 @@ def create_app(blueprints=None, testing=False):
 
     app = Flask(
         '{{cookiecutter.app_name}}',
-        instance_path='{{app_instance_path}}',
+        instance_path='{{cookiecutter.app_instance_path}}',
         instance_relative_config=True
     )
 
